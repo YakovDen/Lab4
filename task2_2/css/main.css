@@ -1,0 +1,185 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    font: 14px/18px Arial,Tahoma,sans-serif;
+    background: #eee;
+  }
+
+  .wrapper {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+  .header{
+    display: flex;
+    overflow: hidden;
+    max-width: 1360px; 
+    justify-content: space-around;
+  }
+
+  .logo, .nav{     
+    min-height: 60px;
+    width: 48%;
+    margin:1%;    
+}
+
+.logo{  
+    padding-top:2%;
+    background: #FF0000;
+    text-align: center;
+    margin-right: 1%;
+}
+
+.logo span{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav{ 
+    background: #FF4500;
+}
+
+.content{
+    min-height: 250px;
+    margin: 0 1%;   
+    padding: 5%;
+    background: #00FF00;
+    align-items: center;
+    justify-content: center;
+}
+
+.content p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: auto;    
+    background: #00FF00; 
+}
+
+.clearfix{  
+    padding: 1%; 
+    display: flex;    
+ }
+
+ .post{   
+    width: 30.33%;
+    padding: 0 5%;     
+    text-align: center;     
+    margin: 1.25%;   
+}
+
+.post .img{
+    text-align: center;   
+   
+}
+
+.post img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.post h5{
+    font-size: 10px;
+    margin-bottom: 0.5%;
+    color: #000;   
+}
+
+.post p{
+    font-size: 10px;
+    color: #000; 
+    margin-top: 0.5%;    
+}
+
+
+.post, .img, h5, p{
+    display: inline-block;    
+    text-align: center;     
+    margin-top: 20px;
+    background: #FF4500;
+}
+
+footer {
+    width: 97%;
+    max-height: 20%;
+    margin: 0 3%;
+       
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  /* For ipad */
+  @media screen and (max-width: 768px){
+
+    #wrapper{        
+        width: 100%;
+    }
+    .header{  
+       margin: 0 auto;         
+    }
+
+    .logo, .nav{             
+        min-height: 40px;       
+       
+    }
+
+    .logo{
+        padding: 20px;      
+        text-align: center;              
+    }  
+ 
+    .clearfix{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .post{
+        max-width: 45%;       
+    }
+   
+    .post p{
+        margin-bottom: 15px;
+    }
+    
+   
+}
+  /* For iphone */
+  @media screen and (max-width: 480px){
+
+    .wrapper{       
+        width: 100%;
+    }  
+  
+    .header, .clearfix{
+        flex-wrap: wrap;
+    }
+    .post{       
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        padding-top: 10%;          
+    }
+
+    
+    .nav{
+        display: none;
+    }
+
+    footer {
+        width: 97%;
+        max-height: 20%;
+        margin: 0 6%;      
+      }
+    
+  }
